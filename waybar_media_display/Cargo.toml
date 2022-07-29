@@ -1,0 +1,11 @@
+[package]
+name = "waybar_media_display"
+rust-version = "1.62.1"
+version = "0.1.0"
+edition = "2021"
+description = "Waybar Media Display Module using playerctl"
+license = "GPL"
+
+[profile.release]
+opt-level = 3
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
