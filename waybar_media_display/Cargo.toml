@@ -5,7 +5,7 @@ version = "0.1.0"
 description = "Waybar Media Display Module using playerctl"
 rust-version = "1.62.1"
 authors= ["Michael Petersen <development@michaelpetersen.co>"]
-license = "GPL"
+license = "GPL-3.0-or-later"
 repository ="https://github.com/MichaelPetersen22/waybar_modules.git"
 
 [profile.release]
