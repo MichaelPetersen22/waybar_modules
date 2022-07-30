@@ -6,6 +6,8 @@ sudo pacman -S playerctl
 
 source "$HOME/.cargo/env"
 
+echo "Hello World"
+
 ## Install Module
 cargo install waybar_media_display
 
