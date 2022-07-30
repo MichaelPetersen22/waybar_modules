@@ -1,1 +1,0 @@
-# Waybar Media Display Module
