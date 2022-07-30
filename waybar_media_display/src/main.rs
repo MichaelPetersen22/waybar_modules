@@ -1,4 +1,3 @@
-// Requires otf-fontawesome (For ICON), playerctl to be installed
 mod args;
 
 use std::{process::Command};
@@ -11,11 +10,15 @@ const STR_MAX: u8 = 40;
 const NEWLINE: u8 = 10;
 
 fn main() {
+    // Parses Argument provided to the script
     let args: Args = Args::parse();
+    // Initializes the values that will be returned at the end of the program
     let mut text = String::new();
     let status: String = get_status(&args.media);
+
     // Decide what to do depending on status output
     if status == "Playing" {
+        // Initialize blank append variable (Modified if string is too long)
         let mut append: &str = "";
         let data: String = get_data(&args.media);
 
