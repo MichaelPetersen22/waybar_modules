@@ -1,5 +1,5 @@
 #!/bin/bash
-installer=$1
+arg=$1
 
 ## Install Cargo
 curl https://sh.rustup.rs -sSf | sh
@@ -7,7 +7,7 @@ curl https://sh.rustup.rs -sSf | sh
 
 ## Install playerctl
 sudo pacman -S playerctl --needed --noconfirm
-if [ "$installer" == "yes" ]; then
+if [ "$arg" == "yes" ]; then
  sudo pacman -S otf-font-awesome --needed --noconfirm
 fi
 
