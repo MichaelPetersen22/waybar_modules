@@ -10,7 +10,7 @@ cargo install waybar_media_display
 Alternatively you can just run
 
 ```
-curl https://raw.githubusercontent.com/MichaelPetersen22/waybar_modules/main/waybar_media_display/install.sh -sSf | sh
+curl https://raw.githubusercontent.com/MichaelPetersen22/waybar_modules/main/media_install.sh -sSf | sh
 ```
 
 ### Pre-Requisites
