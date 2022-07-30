@@ -3,10 +3,10 @@
 curl https://sh.rustup.rs -sSf | sh
 ## Install playerctl
 
-read -p "Install otf-font-awesome? [y/N] " installFont
+read -p "Install otf-font-awesome? [y/N] " install
 
 sudo pacman -S playerctl --needed --noconfirm
-if [ $installFont == 'y' ]; then
+if [ $install == "y" ]; then
  sudo pacman -S otf-font-awesome --needed --noconfirm
 fi
 
