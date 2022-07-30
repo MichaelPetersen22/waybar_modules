@@ -1,5 +1,5 @@
 #!/bin/bash
-installer = $1
+installer=$1
 
 ## Install Cargo
 curl https://sh.rustup.rs -sSf | sh
