@@ -4,6 +4,8 @@ curl https://sh.rustup.rs -sSf | sh
 ## Install playerctl
 sudo pacman -S playerctl
 
+source "$HOME/.cargo/env"
+
 ## Install Module
 cargo install waybar_media_display
 
