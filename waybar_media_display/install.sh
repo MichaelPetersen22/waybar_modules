@@ -1,6 +1,6 @@
 #!/bin/bash
 ## Install Cargo
-curl https://sh.rustup.rs -sSf | sh
+curl https://sh.rustup.rs -sSf --noconfirm | sh
 ## Install playerctl
 sudo pacman -S playerctl --needed --noconfirm
 echo "Hello World"
