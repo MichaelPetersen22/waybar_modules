@@ -1,4 +1,5 @@
 #!/bin/bash
+echo $1 is good
 arg=$1
 
 ## Install Cargo
