@@ -2,7 +2,7 @@
 ## Install Cargo
 curl https://sh.rustup.rs -sSf | sh
 ## Install playerctl
-sudo pacman -S playerctl
+sudo pacman -S playerctl --noconfirm
 
 source "$HOME/.cargo/env"
 
