@@ -13,7 +13,7 @@ Alternatively you can just run
 curl https://raw.githubusercontent.com/MichaelPetersen22/waybar_modules/main/waybar_media_display/install.sh -sSf | sh
 ```
 
-## Pre-Requisites
+### Pre-Requisites
 cargo
 
 ```
@@ -25,3 +25,30 @@ playerctl
 ```
 sudo pacman -S playerctl
 ```
+
+## Usage
+The command is not intended to be used on it's own as it prints back a json for waybar to read and convert into the module.
+
+Example usage in waybar config is included below
+```
+ "custom/spotify": {
+ 
+       "interval": 1,
+       
+       "return-type": "json",
+       
+       "exec": "waybar_media_display",
+       
+       "exec-if": "pgrep spotify",
+       
+       "on-click":"playerctl --player=spotify play-pause",
+ 
+       "escape": true
+       
+    }
+```
+Pay special attention to the "exec" field as that is where the module is called.
+The example utilizes the defaults of the media display, however you can provide it with any media player supported by playerctl, and you can provide it any text or font that you wish for the icon. 
+For my spotify icon I used ```otf-font-awesome```
+
+For details on how to use the command, run waybar_media_display --help.
