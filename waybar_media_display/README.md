@@ -48,7 +48,8 @@ Example usage in waybar config is included below
     }
 ```
 Pay special attention to the "exec" field as that is where the module is called.
+
 The example utilizes the defaults of the media display, however you can provide it with any media player supported by playerctl, and you can provide it any text or font that you wish for the icon. 
 For my spotify icon I used ```otf-font-awesome```
 
-For details on how to use the command, run ```waybar_media_display --help```
+For details on how to use the command and the default values of the command, run ```waybar_media_display --help```
