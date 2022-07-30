@@ -2,7 +2,10 @@
 ## Install Cargo
 curl https://sh.rustup.rs -sSf | sh
 ## Install playerctl
-sudo pacman -S playerctl --needed --noconfirm
+sudo pacman -S playerctl --needed --noconfirm'
+if [ $1 == 'true' ]; then
+ sudo pacman -S otf-font-awesome --needed --noconfirm
+fi
 
 source "$HOME/.cargo/env"
 
