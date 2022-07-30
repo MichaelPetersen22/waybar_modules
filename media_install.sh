@@ -6,9 +6,9 @@ curl https://sh.rustup.rs -sSf | sh
 
 
 ## Install playerctl
-sudo pacman -S playerctl --needed --noconfirm
+sudo pacman -Sy playerctl --needed --noconfirm
 if [ "$arg" == "yes" ]; then
- sudo pacman -S otf-font-awesome --needed --noconfirm
+ sudo pacman -Sy otf-font-awesome --needed --noconfirm
 fi
 
 source "$HOME/.cargo/env"
