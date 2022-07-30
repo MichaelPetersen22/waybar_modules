@@ -3,7 +3,6 @@
 curl https://sh.rustup.rs -sSf | sh
 ## Install playerctl
 sudo pacman -S playerctl --needed --noconfirm
-echo "Hello World"
 
 source "$HOME/.cargo/env"
 
