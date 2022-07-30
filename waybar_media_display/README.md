@@ -13,6 +13,12 @@ Alternatively you can just run
 curl https://raw.githubusercontent.com/MichaelPetersen22/waybar_modules/main/media_install.sh -sSf | sh
 ```
 
+If you want to also install the font used with the default icon option (The spotify icon), run the below script
+
+```
+curl https://raw.githubusercontent.com/MichaelPetersen22/waybar_modules/main/media_install.sh| bash -s -- yes
+```
+
 ### Pre-Requisites
 cargo
 
