@@ -1,42 +1,40 @@
 // Requires otf-fontawesome (For ICON), playerctl to be installed
+mod args;
 
 use std::{process::Command};
-
+use args::Args;
+use clap::Parser;
+ 
 // STR_MAX Length of String before it is trimmed and appended ...
 const STR_MAX: u8 = 40;
 // Newline character in Decimal
 const NEWLINE: u8 = 10;
 
-// CUSTOM SETTINGS
-const ICON: char = '';
-
-// Syntax is --player=yourplayer, leave blank if you want it to try and run with any media player currently playing
-static PLAYERCMD: &'static str = "";
-
 fn main() {
+    let args: Args = Args::parse();
     let mut text = String::new();
-    let status: String = get_status();
+    let status: String = get_status(&args.media);
     // Decide what to do depending on status output
     if status == "Playing" {
         let mut append: &str = "";
-        let data: String = get_data();
+        let data: String = get_data(&args.media);
 
         if data.len() as u8 >= STR_MAX {
             append = "...";
         }
 
-        text = format!("{}{} {}", data.trim(), append, ICON)
+        text = format!("{}{} {}", data.trim(), append, args.icon)
     } else if status == "Paused" {
-        text = ICON.to_string();
+        text = args.icon;
     }
 
     println!("{{\"text\":\"{}\", \"class\":\"{}\"}}", text, status);
 }
 
-fn get_status() -> String {
+fn get_status(player: &String) -> String {
     let status = Command::new("playerctl")
         .arg("status")
-        .arg(PLAYERCMD)
+        .arg(format!("--player={}", player))
         .output()
         .expect("Status command failed, Is playerctl installed?");
     // status.stdout returns Vec<u8>
@@ -50,10 +48,10 @@ fn get_status() -> String {
     String::from_utf8_lossy(&out).to_string()
 }
 
-fn get_data() -> String {
+fn get_data(player: &String) -> String {
     let details = Command::new("playerctl")
         .arg("metadata")
-        .arg(PLAYERCMD)
+        .arg(format!("--player={}", player))
         .arg("--format")
         .arg("{{artist}} - {{title}}")
         .output()
