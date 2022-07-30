@@ -12,3 +12,4 @@ repository ="https://github.com/MichaelPetersen22/waybar_modules.git"
 opt-level = 3
 
 [dependencies]
+clap = {version = "3.2.16", features = ["derive"]}
