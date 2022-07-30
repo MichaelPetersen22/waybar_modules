@@ -1,6 +1,6 @@
 #!/bin/bash
-echo $1 is good
-arg=$1
+echo "$1" is good
+arg="$1"
 
 ## Install Cargo
 curl https://sh.rustup.rs -sSf | sh
