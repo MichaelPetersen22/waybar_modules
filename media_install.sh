@@ -2,11 +2,11 @@
 ## Install Cargo
 curl https://sh.rustup.rs -sSf | sh
 ## Install playerctl
-sudo pacman -S playerctl --needed --noconfirm
-echo "Install otf-font-awesome? [y/N]"
-read installFont
 
-if [ $installFont == "y" ]; then
+read -p "Install otf-font-awesome? [y/N] " installFont
+
+sudo pacman -S playerctl --needed --noconfirm
+if [ $installFont == 'y' ]; then
  sudo pacman -S otf-font-awesome --needed --noconfirm
 fi
 
