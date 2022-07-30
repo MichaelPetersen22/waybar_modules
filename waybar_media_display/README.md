@@ -9,9 +9,15 @@ cargo install waybar_media_display
 ```
 Alternatively you can just run
 
+wget
 ```
 wget -O - https://raw.githubusercontent.com/MichaelPetersen22/waybar_modules/main/waybar_media_display/install.sh | sudo bash
 ```
+curl
+```
+curl https://raw.githubusercontent.com/MichaelPetersen22/waybar_modules/main/waybar_media_display/install.sh -sSf | sh
+```
+
 ## Pre-Requisites
 cargo
 
