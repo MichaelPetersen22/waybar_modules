@@ -8,7 +8,6 @@ read installFont
 
 if [ $installFont == "y" ]; then
  sudo pacman -S otf-font-awesome --needed --noconfirm
-else
 fi
 
 source "$HOME/.cargo/env"
