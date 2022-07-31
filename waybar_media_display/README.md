@@ -32,6 +32,12 @@ playerctl
 sudo pacman -S playerctl
 ```
 
+otf-font-awesome
+
+```
+sudo pacman -S otf-font-awesome
+```
+
 ## Usage
 The command is not intended to be used on it's own as it prints back a json for waybar to read and convert into the module.
 
