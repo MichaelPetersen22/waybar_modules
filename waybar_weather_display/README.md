@@ -54,3 +54,5 @@ For details on how to use the command and the default values of the command, run
 
 ## Planned
 I plan on adding support for configuration files wherein you can specify all of the command line params (lat, long) as well as customize what icons are used, text for the weather conditions and measurement type (i.e. celsius or fahrenheight). I may also add in support for being able to ask for extra information from the API (i.e. the ability to get temperature, humidity, rain amount) however this may be quite ambitious as it will require the ability to build out URL params for the API request.
+
+Rework to use nerd icons in place of Font Awesome, as font awesome does not have very many weather icons
