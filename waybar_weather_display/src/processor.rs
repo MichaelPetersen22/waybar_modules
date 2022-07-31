@@ -2,6 +2,7 @@
 const CLEAR: u8 = 0;
 const CLEARICO: char = '';
 
+// TODO Implement Icon
 const PARTLYCLEAR: u8 = 1;
 const PARTICO: char = '';
 
@@ -9,6 +10,7 @@ const FOGGY: [u8; 2] = [45, 48];
 const FOGICO: char = 'F';
 
 
+// TODO Implement Icon
 // [0] Partly Cloudy, [1] Overcast
 const CLOUDY: [u8; 2] = [2, 3];
 const CLOUDICO: char = '';
@@ -37,7 +39,7 @@ const SNSHOWICO: char = '';
 
 // [0] Slight or Moderate, [1] Slight Hail, [2] Heavy Hail
 const THUNDERSTORM: [u8; 3] = [95, 96, 99];
-const THUNDERICO: char = 'T';
+const THUNDERICO: char = '';
 
 // Error Icon when code does not return
 const ERRICO: char = '';
