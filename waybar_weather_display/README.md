@@ -40,7 +40,7 @@ Example usage in waybar config is included below
     "custom/weather": {
         "interval": 900,
         "return-type":"json",
-        "exec":"waybar_weather_display --latitude -27.4679 --longitude 153.0281",
+        "exec":"waybar_weather_display --latitude 51.5085 --longitude -0.1257",
 	    "format-alt": "{} ",
 	    "format":"{alt} ",
 	    "format-alt-click":"click-right",
