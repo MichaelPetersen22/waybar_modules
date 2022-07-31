@@ -1,5 +1,5 @@
 # Waybar Weather Display Module
-
+![20220731_14h52m07s_grim-cropped](https://user-images.githubusercontent.com/72793125/182010979-70271606-3a8c-4c86-b7cb-1c5795949d58.png)
 ## Installation
 With Pre-Requisites already installed
 
