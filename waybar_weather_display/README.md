@@ -37,15 +37,14 @@ The command is not intended to be used on it's own as it prints back a json for 
 
 Example usage in waybar config is included below
 ```
- "custom/weather": {
- 
-       "interval": 1800,
-       
-       "return-type": "json",
-       
-       "exec": "waybar_weather_display --latitude 51.5085 --longitude -0.1257",
- 
-       "escape": true
+    "custom/weather": {
+        "interval": 900,
+        "return-type":"json",
+        "exec":"waybar_weather_display --latitude -27.4679 --longitude 153.0281",
+	    "format-alt": "{} ",
+	    "format":"{alt} ",
+	    "format-alt-click":"click-right",
+	    "escape": true
     }
 ```
 Pay special attention to the "exec" field as that is where the module is called.
@@ -53,6 +52,10 @@ Pay special attention to the "exec" field as that is where the module is called.
 For details on how to use the command and the default values of the command, run ```waybar_weather_display --help```
 
 ## Planned
-I plan on adding support for configuration files wherein you can specify all of the command line params (lat, long) as well as customize what icons are used, text for the weather conditions and measurement type (i.e. celsius or fahrenheight). I may also add in support for being able to ask for extra information from the API (i.e. the ability to get temperature, humidity, rain amount) however this may be quite ambitious as it will require the ability to build out URL params for the API request.
+Configuration File Support
+
+Additional CLI Parameters with Config File Support (i.e. Custom Icons, Custom Weather Condition Text)
+
+Additional Return Data (I.e. get temperature, Humidity, Rain)
 
 Rework to use nerd icons in place of Font Awesome, as font awesome does not have very many weather icons
